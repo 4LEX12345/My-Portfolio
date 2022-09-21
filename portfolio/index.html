@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex U. Aquino - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/f300c7f275.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<h1 ><span style="font-size: 40px;">A</span>lex.</h1>
+				<ul>
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-text">
+				<h1>Hi, I'm <span style="color:#A9A9A9"> Alex Aquino </span></h1>
+				<p>Bachelor of Sciene in Computer Science</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- about -->
+	<div id="about">
+		 <div class="container">
+		 	<div class="row">
+				<div class="about-col-1">
+					<img src="img/myimg.jpg" height="500">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>Objective : To gain Knowledge and exposure to companies that is related to my degree where I can learn and contribute in a positive ways.</p>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills & Talents</p>
+					<p class="tab-links" onclick="opentab('exp')"> Work Experience</p>
+					<p class="tab-links" onclick="opentab('educ')">Education</p>
+				</div>
+
+				
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Knowledgeable on Different MS Office</span></li>
+						<li><span>Knowledgeable on Different Programming Language</span> <br> PHP , SQL , JAVA</li>
+						<li><span>Computer Literate</span></li>
+						<li><span>Can do Multitasking</span></li>
+						<li><span>Fast Learner</span></li>
+					</ul>	
+				</div>
+				<div class="tab-contents" id="exp">
+					<ul>
+						<li><span>IT Associate | Arrowgo Logistics Inc. | OJT</span><br>My task is to develop their company website</li>
+						<li><span>Print Shope Assistant | Eve's Printing Shope | Part - Time Job</span><br>I am task to print, edit and photocopy</li>
+					
+					</ul>	
+				</div>
+				<div class="tab-contents" id="educ">
+					<ul>
+						<li><span>Norzagaray College | S.Y. 2018 - 2022</span>
+						<br>Bachelor of Science in Computer Science</li>
+						<li><span>Taal Senior High School | S.Y. 2012 - 2018</span>
+						<br>Tech-Voc | Computer Programming</li>
+						<li><span>Tambubong Elementary School | S.Y. 2006 - 2012</span>
+						<br></li>
+
+					</ul>	
+				</div>
+
+				</div>		
+		 	</div>
+
+		 </div>
+	</div>
+
+	<!-- services -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="">Learn More...</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-crop-simple"></i>
+					<h2>UX/UI Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="">Learn More...</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>App Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="">Learn More...</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 	porftfolio -->
+	<div id="projects">
+		<div class="container">
+			<h1 class="sub-title">My Works</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="img/arrowgo.png" alt="" width="500">
+					<a href="https://www.arrowgo-logistics.com/" class="btn">Live Demo</a>
+				</div>
+				<div class="work">
+					<img src="img/fb_copy.png" alt="" width="500">
+					<a href="./Facebook/index.html" class="btn">Live Demo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 	contact -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me!</h1>
+					<p><i class="fa-solid fa-phone"></i>09054339606</p>
+					<p><i class="fa-solid fa-envelope"></i>aquinoalex474@gmail.com</p>
+
+					<div class="social-icons">
+						<a href="https://www.messenger.com/t/100003358935089"><i class="fa-brands fa-facebook-messenger"></i><span style="font-size: 15px; margin-left: 10px">Messenger</span></a>
+					</div>
+					<a href="img/Aquino_Alex_Resume.pdf" downdload class="btn">Download Resume</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>Alex U. Aquino | Bachelor of Science in Computer Science | 2022 |</p>
+		</div>
+	</div>
+
+
+
+	<script>
+		
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+
+	</script>
+</body>
+</html>

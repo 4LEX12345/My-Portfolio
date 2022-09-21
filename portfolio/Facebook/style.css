@@ -1,0 +1,123 @@
+*{
+
+	list-style: none;
+
+}
+a{
+	text-decoration: none;
+}
+
+
+img{
+	width: 33%;
+}
+
+body{
+	background-color:#f0f2f5;
+}
+.content{
+	margin-top: 77px;
+	margin-left: 58px;
+}
+.login-content{
+	background-color: white;
+	width: 396px;
+	margin-left: 80px;
+	box-shadow: -2px 13px 33px -11px rgba(0,0,0,0.35);
+-webkit-box-shadow: -2px 13px 33px -11px rgba(0,0,0,0.35);
+-moz-box-shadow: -2px 13px 33px -11px rgba(0,0,0,0.35);
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.title{
+	margin-top: -10px;
+	font-size: 29px;
+}
+.sub_title{
+	margin-top: -20px;
+	font-size: 15px;
+}
+.card{
+	top: 10px;
+	display: inline-flex;
+	margin-right: 10px;
+	box-shadow: 10px 10px 13px -17px rgba(0,0,0,0.3);
+-webkit-box-shadow: 10px 10px 13px -17px rgba(0,0,0,0.3);
+-moz-box-shadow: 10px 10px 13px -17px rgba(0,0,0,0.3);
+}
+.card-body{
+	padding: 12px;
+}
+
+.login-content form{
+	margin-top: 130px;
+	padding: 10px;
+}
+.login-content form input{
+	margin-left: 9px;
+	margin-top : 10px;
+	width: 95%;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.login-content form button{
+	width: 95%;
+	padding: 7px;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.create_btn{
+	font-weight: bolder;
+	font-size: 17px;
+	padding: 10px;
+	margin: 20px;
+	background-color: #36a420;
+}
+.forgot_btn{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.line{
+	margin-left: 20px;
+	width: 90%;
+	border-bottom: 1px solid #dadde1;	
+}
+
+.line-f{
+	margin-top: 10px;
+	width: 90%;
+	border-bottom: 1px solid #dadde1;	
+}
+.create{
+	padding: 22px;
+	font-size: 14px;
+
+}
+
+.create a{
+	font-weight: bold;
+	color: black;
+}
+
+.footer{
+	height: 25vh;
+	margin-top: 100px;
+	padding-left: 80px;
+	background-color: white;
+	width: 100%;
+	font-size: 12px;
+	padding-top: 20px;
+
+}
+
+.footer a{
+	margin:4px;
+	color: #8A8D91;
+}
+
